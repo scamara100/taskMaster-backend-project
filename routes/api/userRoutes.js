@@ -2,8 +2,8 @@ import express from 'express'
 
 const router = express.Router();
 
-import User from '../models/User.js'
-import { signToken } from '../utils/auth.js'
+import User from '../../models/User.js'
+import { signToken } from '../../utils/auth.js'
  
 // POST /api/users/register - Create a new user
 router.post('/register', async (req, res) => {
