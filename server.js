@@ -20,6 +20,6 @@ app.use(express.json());
  
 app.use('/api/projects', projectRoutes);
 app.use('/api/users', userRoutes);
-app.use('/api/projects', taskRoutes);
+app.use('/api/tasks', taskRoutes);
  
 app.listen(PORT, () => console.log(`Listening on http://localhost:${PORT}`));

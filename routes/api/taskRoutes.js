@@ -63,7 +63,7 @@ router.post('/:projectId/tasks', async (req, res) => {
 });
  
 // PUT /api/tasks/:taskId - Update a task
-router.put('/:id', async (req, res) => {
+router.put('/:taskId', async (req, res) => {
   try {
     const { taskId } = req.params
 
@@ -91,7 +91,7 @@ router.put('/:id', async (req, res) => {
 });
  
 // DELETE /api/tasks/:taskId - Delete a task
-router.delete('/:id', async (req, res) => {
+router.delete('/:taskId', async (req, res) => {
     try {
      const { taskId } = req.params
 
